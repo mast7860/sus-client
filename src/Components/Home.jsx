@@ -138,11 +138,30 @@ class Home extends React.Component {
                       this.setState({ answer1: value });
                     }}
                   >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
                     <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
+                  </Radio.Group>
+                </FormRow>
+                <FormRow
+                  section_style="default"
+                  top="large x-small"
+                  section_spacing
+                  label="I found the system unnecessarily complex."
+                >
+                  <Radio.Group
+                    value="two"
+                    on_change={({ value }) => {
+                      this.setState({ answer2: value });
+                    }}
+                  >
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
+                    <Radio label="Nuetral" value="3" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
                   </Radio.Group>
                 </FormRow>
                 <FormRow
@@ -152,16 +171,16 @@ class Home extends React.Component {
                   label="I thought the system was easy to use."
                 >
                   <Radio.Group
-                    value="two"
+                    value="three"
                     on_change={({ value }) => {
-                      this.setState({ answer2: value });
+                      this.setState({ answer3: value });
                     }}
                   >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
                     <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
                   </Radio.Group>
                 </FormRow>
                 <FormRow
@@ -171,16 +190,16 @@ class Home extends React.Component {
                   label="I think that I would need the support of a technical person to be able to use this system."
                 >
                   <Radio.Group
-                    value="three"
+                    value="four"
                     on_change={({ value }) => {
-                      this.setState({ answer3: value });
+                      this.setState({ answer4: value });
                     }}
                   >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
                     <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
                   </Radio.Group>
                 </FormRow>
                 <FormRow
@@ -190,35 +209,16 @@ class Home extends React.Component {
                   label="I found the various functions in this system were well integrated."
                 >
                   <Radio.Group
-                    value="four"
-                    on_change={({ value }) => {
-                      this.setState({ answer4: value });
-                    }}
-                  >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
-                    <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
-                  </Radio.Group>
-                </FormRow>
-                <FormRow
-                  section_style="default"
-                  top="large x-small"
-                  section_spacing
-                  label="I think that I would need the support of a technical person to be able to use this system."
-                >
-                  <Radio.Group
                     value="five"
                     on_change={({ value }) => {
                       this.setState({ answer5: value });
                     }}
                   >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
                     <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
                   </Radio.Group>
                 </FormRow>
                 <FormRow
@@ -233,11 +233,11 @@ class Home extends React.Component {
                       this.setState({ answer6: value });
                     }}
                   >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
                     <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
                   </Radio.Group>
                 </FormRow>
                 <FormRow
@@ -252,11 +252,11 @@ class Home extends React.Component {
                       this.setState({ answer7: value });
                     }}
                   >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
                     <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
                   </Radio.Group>
                 </FormRow>
                 <FormRow
@@ -271,11 +271,11 @@ class Home extends React.Component {
                       this.setState({ answer8: value });
                     }}
                   >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
                     <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
                   </Radio.Group>
                 </FormRow>
                 <FormRow
@@ -290,11 +290,11 @@ class Home extends React.Component {
                       this.setState({ answer9: value });
                     }}
                   >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
                     <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
                   </Radio.Group>
                 </FormRow>
                 <FormRow
@@ -309,11 +309,11 @@ class Home extends React.Component {
                       this.setState({ answer10: value });
                     }}
                   >
-                    <Radio label="Completely Satisfied" value="1" />
-                    <Radio label="Satisfied" value="2" />
+                    <Radio label="Completely Unsatisfied" value="1" />
+                    <Radio label="Unsatisfied" value="2" />
                     <Radio label="Nuetral" value="3" />
-                    <Radio label="Unsatisfied" value="4" />
-                    <Radio label="Completely Unsatisfied" value="5" />
+                    <Radio label="Satisfied" value="4" />
+                    <Radio label="Completely Satisfied" value="5" />
                   </Radio.Group>
                 </FormRow>
                 <FormRow section_style="default" top="large x-small">
