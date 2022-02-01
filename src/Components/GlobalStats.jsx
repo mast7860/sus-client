@@ -3,8 +3,6 @@ import axios from "axios";
 import { Heading, Table, Hr, Button, DatePicker } from "@dnb/eufemia";
 import { P } from "@dnb/eufemia/elements";
 
-const url = process.env.URL || "http://localhost:8080";
-
 const PersonRow = (props) => {
   return (
     <tr className="dnb-table__tr dnb-table__tr--even">
@@ -34,7 +32,7 @@ class GlobalStats extends React.Component {
 
   handleClick(start_date, end_date) {
     axios
-      .get({ url } + "/globalStats", {
+      .get("https://sus-service-micronaut.herokuapp.com/globalStats", {
         params: { fromDate: start_date, toDate: end_date },
       })
       .then((response) =>
@@ -58,15 +56,17 @@ class GlobalStats extends React.Component {
   }
 
   componentDidMount() {
-    axios.get({ url } + "/globalStats").then((response) =>
-      this.setState({
-        totalCount: response.data.totalCount,
-        percentile: response.data.percentile,
-        grade: response.data.grade,
-        responseTimes: response.data.responseTimes,
-        stats: response.data.stats,
-      })
-    );
+    axios
+      .get("https://sus-service-micronaut.herokuapp.com/globalStats")
+      .then((response) =>
+        this.setState({
+          totalCount: response.data.totalCount,
+          percentile: response.data.percentile,
+          grade: response.data.grade,
+          responseTimes: response.data.responseTimes,
+          stats: response.data.stats,
+        })
+      );
   }
 
   render() {

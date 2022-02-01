@@ -46,7 +46,7 @@ class Home extends React.Component {
 
   SubmitForm(data, sessionId) {
     axios
-      .post("http://localhost:8080/save", data, {
+      .post("https://sus-service-micronaut.herokuapp.com/save", data, {
         headers: {
           sessionId: sessionId,
         },
@@ -70,7 +70,7 @@ class Home extends React.Component {
 
   componentDidMount() {
     axios
-      .get("http://localhost:8080/token")
+      .get("https://sus-service-micronaut.herokuapp.com/token")
       .then((response) =>
         this.setState({
           sessionId: response.data.sessionId,
