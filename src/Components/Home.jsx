@@ -12,7 +12,6 @@ import {
 
 import { P } from "@dnb/eufemia/elements";
 
-const url = process.env.URL || "http://localhost:8080";
 class Home extends React.Component {
   constructor(props) {
     super(props);
