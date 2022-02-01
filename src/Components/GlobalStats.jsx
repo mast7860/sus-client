@@ -32,7 +32,7 @@ class GlobalStats extends React.Component {
 
   handleClick(start_date, end_date) {
     axios
-      .get("https://sus-service-micronaut.herokuapp.com/globalStats", {
+      .get("http://localhost:8080/globalStats", {
         params: { fromDate: start_date, toDate: end_date },
       })
       .then((response) =>
@@ -56,17 +56,15 @@ class GlobalStats extends React.Component {
   }
 
   componentDidMount() {
-    axios
-      .get("https://sus-service-micronaut.herokuapp.com/globalStats")
-      .then((response) =>
-        this.setState({
-          totalCount: response.data.totalCount,
-          percentile: response.data.percentile,
-          grade: response.data.grade,
-          responseTimes: response.data.responseTimes,
-          stats: response.data.stats,
-        })
-      );
+    axios.get("http://localhost:8080/globalStats").then((response) =>
+      this.setState({
+        totalCount: response.data.totalCount,
+        percentile: response.data.percentile,
+        grade: response.data.grade,
+        responseTimes: response.data.responseTimes,
+        stats: response.data.stats,
+      })
+    );
   }
 
   render() {
